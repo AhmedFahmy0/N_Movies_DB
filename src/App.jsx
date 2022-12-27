@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Layout from './Components/Layout/Layout';
-import { RouterProvider, createBrowserRouter, Navigate } from 'react-router-dom';
+import { RouterProvider, Navigate, createHashRouter } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Movies from './Components/Movies/Movies';
 import Login from './Components/Login/Login';
