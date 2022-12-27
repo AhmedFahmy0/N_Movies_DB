@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+:root {
+  --bg-color: #131722;
+  --min-font: 'Montserrat Alternates', sans-serif;
+  --light-bg: #24baef;
+  --font-color: #fff;
+  --bg-Transparent: rgba(36, 186, 239, .6);
+  --border-Color: #a8a8a83d;
+  --second-FontColor: #949cb0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--min-font);
+  color: var(--font-color);
+}
+::-webkit-scrollbar-track
+{
+	background-color: var(--bg-color) !important;
+}
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: var(--light-bg) !important;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: var(--light-bg);
+  border-radius:50px ;
+}
+a,
+a:hover {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.my-input {
+  background-color: transparent;
+  border: solid 1px var(--border-Color);
+  color: var(--font-color);
+}
+
+.my-input:focus {
+  background-color: transparent;
+  border: solid 1px var(--border-Color);
+  color: var(--font-color);
+}
+
+.brder {
+  height: 1px;
+  background-color: var(--font-color);
+}
+
+.vote {
+  background-color: var(--light-bg);
+}
+
+.offline {
+  position: fixed;
+  background-color: var(--bg-color) !important;
+  border: #24baef solid 1px;
+  bottom: 50px;
+  left: 50px;
+  padding: 1.5rem;
+  z-index: 999999999;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus{
+  box-shadow: #24baef !important;
+}
+.curs{
+  cursor: pointer;
+}
+.fab:hover{
+  color: var(--light-bg) !important;
+  cursor: pointer;
+}
+

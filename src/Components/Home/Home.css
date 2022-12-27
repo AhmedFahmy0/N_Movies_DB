@@ -1,0 +1,81 @@
+.bg-cover {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    box-shadow: rgb(37, 37, 37) 0px 11px 0px -10px inset, #131722 0px -117px 50px -10px inset;
+    transition: all 1s ease-in-out;
+    box-shadow: var(--bg-color) 300px -200px 250px -1px inset;
+}
+
+.cover-Display-home {
+    transition: all 1s ease-in-out;
+    top: 50%;
+    transform: translateY(-17%);
+    background-color: unset;
+}
+
+.cover-Display span {
+    background-color: #161616 !important;
+    border: 2px solid gray !important;
+    width: fit-content;
+    border-radius: 6px;
+}
+
+.slider-btn {
+    background-color: #212529 !important;
+    color: white !important;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.bg-bludark{
+background-color: #131722 !important;
+}
+
+button.active {
+    background-color: #34a1e0 !important;
+}
+
+.cover-Display-home button:hover {
+    padding-left: 30px;
+}
+
+#HomeBtns button {
+    border: none;
+}
+
+#HomeBtns button:focus {
+    border: none;
+}
+
+.cardOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgb(5, 3, 32);
+    background: radial-gradient(circle, rgba(5, 3, 32, 0) 0%, rgba(0, 0, 0, 0.5886729691876751) 28%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardOverlay i {
+    font-size: 40px !important;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.cardOverParent{
+    position: relative;
+}
+.cardOverParent:hover .cardOverlay {
+    opacity: 1;
+}
+

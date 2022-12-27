@@ -1,0 +1,23 @@
+@media screen and (max-width: 620px) {
+  .searchBox:hover > #searchInput {
+order: 1;
+  }
+
+.trailer-btn {
+    width: 40%!important;
+}
+.cover{
+  box-shadow: none;
+  
+}
+.cover-Display
+{
+  background-color: rgba(19, 23, 34, 0.6);
+  top: 30%;
+  /* padding-bottom: 1rem !important; */
+  /* box-shadow:var(--bg-color) 150px -100px 250px -50px  inset; */
+}
+.searchBox:hover > .searchButton {
+    color: #fff;
+}
+}
