@@ -10,9 +10,9 @@ import Tv from './Components/Tv/Tv';
 import jwtDecode from 'jwt-decode';
 import MediaDetails from './Components/MediaDetails/MediaDetails';
 import { Offline } from 'react-detect-offline';
-import ApiDataProvider from './Context/ApiStore';
 import Profile from './Components/Profile/Profile';
 import PersonDetails from './Components/personDetails/PersonDetails';
+import Notfound from './Components/Notfound/Notfound';
 
 
 export default function App() {
@@ -50,7 +50,7 @@ return <>
 }
 
 
-let router = createBrowserRouter([
+let router = createHashRouter([
 {path:'' , element:<Layout removeUserData={removeUserData} userData={userData} /> , children:[
 {path:'login' , element:<Login saveUserData={saveUserData} userData={userData}/>},
 {path:'register' , element:<Register userData={userData}/>},
@@ -61,6 +61,7 @@ let router = createBrowserRouter([
 {path:'people' , element:<ProtectedRoute> <People /> </ProtectedRoute>},
 { path: 'person/:id', element: <ProtectedRoute><PersonDetails /></ProtectedRoute> },
 {path:'profile' , element:<ProtectedRoute> <Profile userData={userData}/> </ProtectedRoute>},
+{ path: '*', element: <ProtectedRoute><Notfound /></ProtectedRoute> }
 ]}
 ])
 
