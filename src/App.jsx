@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useContext, useEffect, useState } from 'react'
 import Layout from './Components/Layout/Layout';
 import { RouterProvider, Navigate, createHashRouter } from 'react-router-dom';
 import Home from './Components/Home/Home';
@@ -13,17 +14,26 @@ import { Offline } from 'react-detect-offline';
 import Profile from './Components/Profile/Profile';
 import PersonDetails from './Components/personDetails/PersonDetails';
 import Notfound from './Components/Notfound/Notfound';
+import { ApiData } from './Context/ApiStore'
+
 
 
 export default function App() {
+
+  const x = useContext(ApiData)
+  console.log(x)
 
 const [userData, setUserData] = useState(null)
 
 function saveUserData(){
 let encodedToken = localStorage.getItem('userToken')
 let decodedToken = jwtDecode(encodedToken)
+console.log(decodedToken)
 setUserData(decodedToken)
+// setprofil(decodedToken)
 }
+
+
 
 function removeUserData(){
 localStorage.removeItem('userToken')
@@ -34,6 +44,7 @@ return <Navigate to="/login" />
 useEffect(() => {
 if (localStorage.getItem('userToken') !== null && userData == null) {
 saveUserData()
+
 }
 }, [])
 
@@ -44,7 +55,7 @@ return <>
 </> 
 }else{
 return <>
-<Login saveUserData={saveUserData}/>
+<Login saveUserData={saveUserData} userData={userData}/>
 </>
 }
 }
@@ -54,7 +65,7 @@ let router = createHashRouter([
 {path:'' , element:<Layout removeUserData={removeUserData} userData={userData} /> , children:[
 {path:'login' , element:<Login saveUserData={saveUserData} userData={userData}/>},
 {path:'register' , element:<Register userData={userData}/>},
-{index:true , element:<ProtectedRoute> <Home /> </ProtectedRoute> },
+{index:true , element: <Home />  },
 {path:'media_details/:media_type/:id' , element:<ProtectedRoute> <MediaDetails /> </ProtectedRoute>},
 {path:'movies' , element:<ProtectedRoute> <Movies /> </ProtectedRoute>},
 {path:'tv' , element:<ProtectedRoute> <Tv /> </ProtectedRoute>},

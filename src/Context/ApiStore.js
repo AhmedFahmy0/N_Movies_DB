@@ -19,6 +19,7 @@ function ApiDataProvider(props) {
     const [currentPage, setcurrentPage] = useState(1);
     const [searchList, setSearchList] = useState(null);
     const [CheckingSearch, setCheckSearching] = useState("");
+    const [profil, setprofil] = useState(null)
 
     async function getTrendingAll() {
         let {
@@ -109,6 +110,7 @@ function ApiDataProvider(props) {
         getTrendingMovies();
         getTrendingTv();
         getTrendingPersons();
+        console.log(profil)
     }, [currentPage]);
 
     return ( <ApiData.Provider value = {
@@ -133,6 +135,8 @@ function ApiDataProvider(props) {
                 setSearchList,
                 setCheckSearching,
                 CheckingSearch,
+                profil,
+                setprofil
             }
         } >
         {    props.children

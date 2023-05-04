@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { ApiData } from '../../Context/ApiStore'
 import { ListContext } from '../../Context/ListContext';
@@ -118,7 +117,7 @@ return (
 
 <div className=' container-fluid my-3  '>
 <div className='d-flex justify-content-center align-items-center '>
-      {currentTrend? <h4 className='me-auto my-3 px-3' >Trending <span className='ms-3 text-info fw-bold'>{currentTrend[0]?.name == undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
+      {currentTrend? <h4 className='me-auto my-3 px-3' >Trending <span className='ms-3 text-info fw-bold'>{currentTrend[0]?.name === undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
       <div id='HomeBtns'>
           <button onClick={() => {getCurrentTrend('movie');setTrendingBtn(true)}} className={'btn me-2 slider-btn '+(TrendingBtn?'active':'')}>Movies</button>
           <button onClick={() => {getCurrentTrend('tv');setTrendingBtn(false)}} className={'btn me-2 slider-btn  '+(TrendingBtn?'':'active')}>Tv Shows</button>
@@ -167,7 +166,7 @@ return (
 
 <div className=' container-fluid my-3  '>
 <div className='d-flex justify-content-center align-items-center '>
-      {currentPopular? <h4 className='me-auto my-3 px-3' >Popular<span className='ms-3 text-info fw-bold'>{currentPopular[0]?.name == undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
+      {currentPopular? <h4 className='me-auto my-3 px-3' >Popular<span className='ms-3 text-info fw-bold'>{currentPopular[0]?.name === undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
       <div id='HomeBtns'>
           <button onClick={() => {getcurrentPopular('movie');setPopularBtn(true)}} className={'btn me-2 slider-btn '+(PopularBtn?'active':'')}>Movies</button>
           <button onClick={() => {getcurrentPopular('tv');setPopularBtn(false)}} className={'btn me-2 slider-btn  '+(PopularBtn?'':'active')}>Tv Shows</button>
@@ -218,7 +217,7 @@ return (
 
 <div className=' container-fluid my-3  '>
 <div className='d-flex justify-content-center align-items-center '>
-      {topRated? <h4 className='me-auto my-3 px-3' >Top Rated <span className='ms-3 text-info fw-bold'>{topRated[0]?.name == undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
+      {topRated? <h4 className='me-auto my-3 px-3' >Top Rated <span className='ms-3 text-info fw-bold'>{topRated[0]?.name === undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
       <div id='HomeBtns'>
           <button onClick={() => {getTopRated('movie');setTopRatedBtn(true)}} className={'btn me-2 slider-btn '+(topRatedBtn?'active':'')}>Movies</button>
           <button onClick={() => {getTopRated('tv');setTopRatedBtn(false)}} className={'btn me-2 slider-btn  '+(topRatedBtn?'':'active')}>Tv Shows</button>
@@ -269,7 +268,7 @@ return (
 
 <div className=' container-fluid my-3  '>
 <div className='d-flex justify-content-center align-items-center '>
-      {anime? <h4 className='me-auto my-3 px-3' >Anime <span className='ms-3 text-info fw-bold'>{anime[0]?.name == undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
+      {anime? <h4 className='me-auto my-3 px-3' >Anime <span className='ms-3 text-info fw-bold'>{anime[0]?.name === undefined? 'Movies' : 'Tv Shows'}</span></h4> : null}
       <div id='HomeBtns'>
           <button onClick={() => {getAnime('movie');setAnimeBtn(true)}} className={'btn me-2 slider-btn '+(animeBtn?'active':'')}>Movies</button>
           <button onClick={() => {getAnime('tv');setAnimeBtn(false)}} className={'btn me-2 slider-btn  '+(animeBtn?'':'active')}>Tv Shows</button>

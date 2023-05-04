@@ -2,7 +2,7 @@ import axios from 'axios'
 import Joi from 'joi'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import $ from 'jquery'
+// import $ from 'jquery'
 import './Register_style.css'
 
 
@@ -78,10 +78,10 @@ function validateRegisterFrom(){
             </div>
         </div> : null}
 
-<div style={{marginTop:'10rem'}}>
-      <form onSubmit={submitRegister} className='my-5 w-50 mx-auto'>
+<div className='bgImage d-flex' >
+      <form onSubmit={submitRegister} className=' form-body w-50 mx-auto my-auto p-4'>
 
-    <label htmlFor="first_name">Frist Name :</label>
+    <label htmlFor="first_name">First Name :</label>
     <input onChange={getUserData}  type="text" className='form-control my-2 my-input' name='first_name' />
     { errorList.length > 0 ? <p className='text-danger error-form  my-2 h5'>
       {errorList.filter(err => err.context.label === 'first_name' )[0]?.message}
@@ -108,10 +108,11 @@ function validateRegisterFrom(){
     <label htmlFor="password">Password :</label>
     <input onChange={getUserData} type="password" className='form-control my-2 my-input' name='password' />
     {errorList.length>0? <p className='text-danger error-form  my-2 h5'>
-      {errorList.filter(err => err.context.label === 'password' )[0]?.message}
+      {/* {errorList.filter(err => err.context.label === 'password' )[0]?.message} */}
+      Write the password only numbers, a minimum of three numbers and a maximum of eight numbers Like 123456
     </p>:''}
 
-    <button className='btn btn-outline-info my-2 px-3'>
+    <button className='btn btn-outline-info bu  my-2 px-3'>
       Register 
       <span>{loading === true?<i className='ms-2 fa fa-spinner fa-spin'></i>:''}</span>
       </button>

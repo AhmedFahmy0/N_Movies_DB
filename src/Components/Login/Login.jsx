@@ -1,8 +1,10 @@
 import axios from 'axios'
 import Joi from 'joi'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import $ from 'jquery'
+import { ApiData } from '../../Context/ApiStore'
+
 
 
 
@@ -10,6 +12,16 @@ import $ from 'jquery'
 
 
 export default function Login({saveUserData , userData}) {
+
+  const {profil} = useContext(ApiData)
+
+
+  useEffect(() => {
+    console.log(profil)
+  
+  
+  }, [])
+  
 
 const [user, setUser] = useState({
 email:"",
@@ -60,12 +72,12 @@ password:Joi.string().required().pattern(/^[0-9]{3,9}/)
 return scheme.validate(user , {abortEarly:false})
 }
 
-// useEffect(()=>{
-//   if(userData !==null)
-//   {
-//       navigate('/')
-//   }
-// })
+useEffect(()=>{
+  if(userData !==null)
+  {
+      navigate('/')
+  }
+})
 
 return (
 <>
