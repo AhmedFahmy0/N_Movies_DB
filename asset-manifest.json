@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/N_Movies_DB/static/css/main.ca6a835d.css",
-    "main.js": "/N_Movies_DB/static/js/main.5cad15ab.js",
+    "main.css": "/N_Movies_DB/static/css/main.01b79483.css",
+    "main.js": "/N_Movies_DB/static/js/main.951b6288.js",
     "static/js/787.f4b9b97a.chunk.js": "/N_Movies_DB/static/js/787.f4b9b97a.chunk.js",
     "static/media/fa-solid-900.ttf": "/N_Movies_DB/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
     "static/media/fa-brands-400.ttf": "/N_Movies_DB/static/media/fa-brands-400.f9ee61fab3c11e2f3ed3.ttf",
@@ -13,12 +13,12 @@
     "static/media/fa-v4compatibility.ttf": "/N_Movies_DB/static/media/fa-v4compatibility.f601162ae669f88823a3.ttf",
     "static/media/fa-v4compatibility.woff2": "/N_Movies_DB/static/media/fa-v4compatibility.745989aab0d69cab7e70.woff2",
     "index.html": "/N_Movies_DB/index.html",
-    "main.ca6a835d.css.map": "/N_Movies_DB/static/css/main.ca6a835d.css.map",
-    "main.5cad15ab.js.map": "/N_Movies_DB/static/js/main.5cad15ab.js.map",
+    "main.01b79483.css.map": "/N_Movies_DB/static/css/main.01b79483.css.map",
+    "main.951b6288.js.map": "/N_Movies_DB/static/js/main.951b6288.js.map",
     "787.f4b9b97a.chunk.js.map": "/N_Movies_DB/static/js/787.f4b9b97a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca6a835d.css",
-    "static/js/main.5cad15ab.js"
+    "static/css/main.01b79483.css",
+    "static/js/main.951b6288.js"
   ]
 }
