@@ -1,8 +1,8 @@
 <div align="center">
-<h1>DMovies</h1>
+<h1>N_Movies</h1>
 
 
-### DMovies is a website where you can watch Movies,Series & Animes.
+### N_Movies is a website where you can watch Movies,Series & Animes.
 
 </div>
 <h3>Features:</h3>
@@ -17,10 +17,11 @@
 
 <h3>Screenshots:</h3>
 
-![image](https://i.imgur.com/Y2iwFsZ.png)
-![image](https://i.imgur.com/kdTIxhz.png)
-![image](https://i.imgur.com/Q2STtPS.png)
-![image](https://i.imgur.com/jwMLB3Z.png)
-![image](https://i.imgur.com/UpyCjP7.png)
-![image](https://i.imgur.com/ZJpCx0q.png)
-![image](https://i.imgur.com/9HIv0R0.png)
+![Imgur](https://i.imgur.com/MVN4hMN.jpg)
+![Imgur](https://i.imgur.com/YddPePP.png)
+![Imgur](https://i.imgur.com/9xkKzK5.png)
+![Imgur](https://i.imgur.com/t1vf64Q.jpg)
+![Imgur](https://i.imgur.com/u3iUfnF.png)
+![Imgur](https://i.imgur.com/Txb1k1K.jpg)
+![Imgur](https://i.imgur.com/dDBhoCb.png)
+![Imgur](https://i.imgur.com/ZqKqrC6.png)
