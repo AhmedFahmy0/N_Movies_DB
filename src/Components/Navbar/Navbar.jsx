@@ -67,6 +67,18 @@ return (
           <li className='nav-link'>
             <Link className='nav-link' to="/profile"> Profile </Link>
           </li>
+                   <li className='nav-link'>
+            <Link className='nav-link' to="/"> Home </Link>
+          </li>
+          <li className='nav-link'>
+            <Link className='nav-link' to="/movies"> Movies </Link>
+          </li>
+          <li className='nav-link'>
+            <Link className='nav-link' to="/tv"> TvShows </Link>
+          </li>
+          <li className='nav-link'>
+            <Link className='nav-link' to="/people"> People </Link>
+          </li>
           </ul>
             :
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
