@@ -65,10 +65,13 @@ return (
       <div className="collapse navbar-collapse text-center" id="navbarSupportedContent">
         {userData?<ul className="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
           <li className='nav-link'>
-            <Link className='nav-link' to="/"> Home </Link>
-          </li>
-          <li className='nav-link'>
             <Link className='nav-link' to="/profile"> Profile </Link>
+          </li>
+          </ul>
+            :
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-center ">
+          <li className='nav-link'>
+            <Link className='nav-link' to="/"> Home </Link>
           </li>
           <li className='nav-link'>
             <Link className='nav-link' to="/movies"> Movies </Link>
@@ -79,7 +82,8 @@ return (
           <li className='nav-link'>
             <Link className='nav-link' to="/people"> People </Link>
           </li>
-        </ul>:null}
+        </ul>
+        }
 
         {/* <div className='icon ms-5'>
           <i className='fab m-2 fa-facebook'></i>
@@ -89,9 +93,8 @@ return (
           <i className='fab m-2 fa-youtube'></i>
         </div> */}
 
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-          {userData ? <>
-            <li className="nav-item d-flex flex-row-reverse">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                        <li className="nav-item d-flex flex-row-reverse">
 
 
               <div className="searchBox d-flex  mx-auto">
@@ -102,6 +105,8 @@ return (
               </div>
 
             </li>
+          {userData ? <>
+
             <li className="nav-item">
               <a className="nav-link" target={'_blank'} href="https://github.com/AhmedFahmy0" rel=""><i
                   className='fa-brands fa-github ' style={{fontSize:'1.5rem'}}></i></a>

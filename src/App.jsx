@@ -67,12 +67,12 @@ let router = createHashRouter([
 {path:'register' , element:<Register userData={userData}/>},
 {index:true , element: <Home />  },
 {path:'media_details/:media_type/:id' , element:<ProtectedRoute> <MediaDetails /> </ProtectedRoute>},
-{path:'movies' , element:<ProtectedRoute> <Movies /> </ProtectedRoute>},
-{path:'tv' , element:<ProtectedRoute> <Tv /> </ProtectedRoute>},
-{path:'people' , element:<ProtectedRoute> <People /> </ProtectedRoute>},
+{path:'movies' , element: <Movies /> },
+{path:'tv' , element: <Tv /> },
+{path:'people' , element:<People />},
 { path: 'person/:id', element: <ProtectedRoute><PersonDetails /></ProtectedRoute> },
 {path:'profile' , element:<ProtectedRoute> <Profile userData={userData}/> </ProtectedRoute>},
-{ path: '*', element: <ProtectedRoute><Notfound /></ProtectedRoute> }
+{ path: '*', element: <Notfound /> }
 ]}
 ])
 

@@ -26,11 +26,11 @@ return (
             <title>Tv Shows</title>
         </Helmet>
   <div className='container my-5 animate__animated animate__fadeIn'>
-    <div className='container d-flex justify-content-center align-items-center'>
+    {/* <div className='container d-flex justify-content-center align-items-center'>
       <button className='btn btn-info my-5 mx-3'>Trending</button>
       <button className='btn btn-info my-5 mx-3'>Popular</button>
       <button className='btn btn-info my-5 mx-3'>Top Rated</button>
-    </div>
+    </div> */}
     <div className='row py-5'>
       <div className='col-md-4 d-flex align-items-center mb-4'>
         <div className=''>

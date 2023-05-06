@@ -78,7 +78,7 @@ function validateRegisterFrom(){
             </div>
         </div> : null}
 
-<div className='bgImage d-flex' >
+<div className='bgImage d-flex mt-5' >
       <form onSubmit={submitRegister} className=' form-body w-50 mx-auto my-auto p-4'>
 
     <label htmlFor="first_name">First Name :</label>
